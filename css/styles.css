@@ -8,7 +8,10 @@
   --brand-color-background: #2f303a;
   --background-page-color: #e5e5e5;
 }
-
+/*conteners */
+* {
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-color-text-black);
@@ -16,6 +19,35 @@ body {
   font-size: 16px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.box-header {
+  background-color: var(--brand-color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  border-bottom: 1px solid #ECECEC;;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 46px;
+  padding-left: 0;
+  margin:32px 364px 32px 0;
+}
+/*Zuzanna tu  musisz Margin i padding*/
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 8px;
+}
+
+/* Fonf styles and pseudoclasses*/
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -23,6 +55,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  max-width: 145px;
+
 }
 .logo-blue {
   color: var(--brand-color-one);
@@ -32,6 +66,15 @@ body {
 }
 .logo-bright {
   color: var(--brand-color-white);
+}
+.logo-header{
+  margin-top: 24px;
+  margin-right:93px;
+  margin-bottom: 25px;
+
+}
+ul {
+  list-style-type: none;
 }
 .nav {
   font-weight: 500;
@@ -51,6 +94,10 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--brand-color-grey);
+}
+.mail-header{
+  max-width: 135px;
+  margin:32px 50px 32px 0;
 }
 .mail-header:hover,
 .tel-header:hover {
@@ -117,6 +164,7 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
@@ -184,7 +232,4 @@ body {
 .mail-footer:focus,
 .tel-footer:focus {
   color: var(--brand-color-one);
-}
-.footer {
-  background-color: var(--brand-color-background-darc);
 }
