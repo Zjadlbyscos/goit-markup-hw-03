@@ -7,6 +7,8 @@
   --brand-color-background-team: #f5f4fa;
   --brand-color-background: #2f303a;
   --background-page-color: #e5e5e5;
+  --border-color-galery:#EEEEEE;
+  --border-color-header:#ECECEC;
 }
 /*conteners */
 * {
@@ -20,8 +22,9 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+ 
 }
 .box-header {
   background-color: var(--brand-color-white);
@@ -29,7 +32,7 @@ body {
   flex-direction: row;
   justify-content:flex-start;
   align-items: center;
-  border-bottom: 1px solid #ECECEC;;
+  border-bottom: 1px solid var(--border-color-header);
 }
 .nav-list {
   display: flex;
@@ -39,12 +42,24 @@ body {
   padding-left: 0;
   margin:32px 364px 32px 0;
 }
-/*Zuzanna tu  musisz Margin i padding*/
+
 .buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0 8px;
+  gap:8px;
+  padding-top: 94px;
+}
+.box-gallery{
+  padding-top: 56px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.gallery{
+  border: 1px solid var(--border-color-galery)
 }
 
 /* Fonf styles and pseudoclasses*/
@@ -75,6 +90,7 @@ body {
 }
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 .nav {
   font-weight: 500;
@@ -195,12 +211,14 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin:20px 24px 4px 24px;
 }
 .project-category {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--brand-color-grey);
+  margin: 0 24px 20px 24px;
 }
 /*footer styles*/
 .mail-footer {
