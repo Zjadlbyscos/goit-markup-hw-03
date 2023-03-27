@@ -7,8 +7,8 @@
   --brand-color-background-team: #f5f4fa;
   --brand-color-background: #2f303a;
   --background-page-color: #e5e5e5;
-  --border-color-galery:#EEEEEE;
-  --border-color-header:#ECECEC;
+  --border-color-galery: #eeeeee;
+  --border-color-header: #ececec;
 }
 /*conteners */
 * {
@@ -24,13 +24,12 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
- 
 }
 .box-header {
   background-color: var(--brand-color-white);
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid var(--border-color-header);
 }
@@ -40,26 +39,27 @@ body {
   justify-content: flex-start;
   gap: 46px;
   padding-left: 0;
-  margin:32px 364px 32px 0;
+  margin: 32px 364px 32px 0;
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:8px;
+  gap: 8px;
   padding-top: 94px;
 }
-.box-gallery{
+.box-gallery {
   padding-top: 56px;
+  padding-bottom: 94px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 30px;
 }
-.gallery{
-  border: 1px solid var(--border-color-galery)
+.gallery {
+  border: 1px solid var(--border-color-galery);
 }
 
 /* Fonf styles and pseudoclasses*/
@@ -71,7 +71,6 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   max-width: 145px;
-
 }
 .logo-blue {
   color: var(--brand-color-one);
@@ -82,11 +81,10 @@ body {
 .logo-bright {
   color: var(--brand-color-white);
 }
-.logo-header{
+.logo-header {
   margin-top: 24px;
-  margin-right:93px;
+  margin-right: 93px;
   margin-bottom: 25px;
-
 }
 ul {
   list-style-type: none;
@@ -111,9 +109,9 @@ ul {
   letter-spacing: 0.02em;
   color: var(--brand-color-grey);
 }
-.mail-header{
+.mail-header {
   max-width: 135px;
-  margin:32px 50px 32px 0;
+  margin: 32px 50px 32px 0;
 }
 .mail-header:hover,
 .tel-header:hover {
@@ -175,6 +173,7 @@ ul {
 .button {
   background-color: var(--brand-color-background-team);
   border-radius: 4px;
+  border-color: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -211,7 +210,7 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin:20px 24px 4px 24px;
+  margin: 20px 24px 4px 24px;
 }
 .project-category {
   font-size: 16px;
@@ -221,6 +220,23 @@ ul {
   margin: 0 24px 20px 24px;
 }
 /*footer styles*/
+footer {
+  background-color: var(--brand-color-background-darc);
+}
+.box-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.box-address{
+  display: flex;
+  flex-direction: column;
+}
+.logo-footer{
+  margin-bottom: 20px;
+}
 .mail-footer {
   font-size: 14px;
   line-height: 1.7;
