@@ -13,6 +13,7 @@
 /*conteners */
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -59,7 +60,9 @@ body {
   gap: 30px;
 }
 .gallery {
-  border: 1px solid var(--border-color-galery);
+  border-left: 1px solid var(--border-color-galery);
+  border-right: 1px solid var(--border-color-galery);
+  border-bottom: 1px solid var(--border-color-galery);
 }
 
 /* Fonf styles and pseudoclasses*/
@@ -95,6 +98,7 @@ ul {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--brand-color-text-black);
 }
 .nav:hover,
@@ -107,6 +111,7 @@ ul {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--brand-color-grey);
 }
 .mail-header {
@@ -130,24 +135,27 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--brand-color-white);
-  margin:0 452px 30px 452px;
-  min-width: 696px;
-
- 
+  max-width: 696px;
+  max-height: 120px;
 }
 .box-slogan{
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   justify-content: center;
-  padding-top:200px;
-  padding-bottom: 200px;
+  align-items: center;
   background: var(--brand-color-background-darc);
+  gap: 30px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-
+.section{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .box-attitude{
   display: flex;
-  flex-direction: column;
-  padding-top: 94px;
+  flex-direction:row;
+  gap:30px;
 }
 .atuty-title {
   font-weight: 700;
@@ -168,8 +176,34 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+}
+.box-what-we-do{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+
 }
 
+
+.section-what-we-do{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: var(--background-page-color);
+}
+.team{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: var(--brand-color-background-team);
+}
+.gallery-our-team{
+  display:flex;
+  flex-direction: row;
+  gap: 30px;
+}
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -214,12 +248,10 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--brand-color-white);
-  margin-left: 742px;
+  max-width: 200px;
+max-height: 50px;
 }
 
 
