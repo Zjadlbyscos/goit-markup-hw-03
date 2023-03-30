@@ -49,11 +49,10 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 8px;
-  padding-top: 94px;
 }
 .box-gallery {
   padding-top: 56px;
-  padding-bottom: 94px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -139,9 +138,9 @@ ul {
   max-width: 696px;
   max-height: 120px;
 }
-.box-slogan{
+.box-slogan {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--brand-color-background-darc);
@@ -149,14 +148,14 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.section{
+.section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.box-attitude{
+.box-attitude {
   display: flex;
-  flex-direction:row;
-  gap:30px;
+  flex-direction: row;
+  gap: 30px;
 }
 .atuty-title {
   font-weight: 700;
@@ -177,40 +176,37 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
 }
-.box-what-we-do{
-  display:flex;
+.box-what-we-do {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
-
 }
 
-
-.section-what-we-do{
+.section-what-we-do {
   display: flex;
   flex-direction: column;
   gap: 50px;
   padding-top: 0;
 }
-.team{
+.team {
   display: flex;
   flex-direction: column;
   gap: 50px;
   background-color: var(--brand-color-background-team);
 }
-.gallery-our-team{
-  display:flex;
+.gallery-our-team {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
 }
-.frame-team{
+.frame-team {
   background-color: var(--brand-color-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   font-weight: 500;
@@ -262,9 +258,8 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.06em;
   color: var(--brand-color-white);
   max-width: 200px;
-max-height: 50px;
+  max-height: 50px;
 }
-
 
 /*tu style galerii portfolio*/
 .project-title {
@@ -284,19 +279,20 @@ max-height: 50px;
 footer {
   background-color: var(--brand-color-background-darc);
 }
-.box-footer{
+.box-footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top:60px;
-  padding-bottom:60px;
+  justify-content: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.box-address{
+.box-address {
   display: flex;
   flex-direction: column;
+  gap: 9px;
 }
-.logo-footer{
-  margin-bottom: 20px;
+.logo-footer {
+  padding-bottom: 20px;
 }
 .mail-footer {
   font-size: 14px;
