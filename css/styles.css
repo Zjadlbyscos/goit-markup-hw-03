@@ -26,7 +26,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-header{
+header {
   border-bottom: 1px solid var(--border-color-header);
 }
 .box-header {
@@ -63,8 +63,6 @@ header{
   gap: 30px;
 }
 .gallery {
-  border-left: 1px solid var(--border-color-galery);
-  border-right: 1px solid var(--border-color-galery);
   border-bottom: 1px solid var(--border-color-galery);
 }
 
@@ -140,11 +138,13 @@ ul {
   max-height: 120px;
 }
 .box-slogan {
+  background: var(--brand-color-background-darc);
+}
+.flex-slogan {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--brand-color-background-darc);
   gap: 30px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -263,19 +263,27 @@ ul {
 }
 
 /*tu style galerii portfolio*/
+img {
+  display: block;
+}
 .project-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 20px 24px 4px 24px;
+  padding: 20px 24px 4px 24px;
+  border-left: 1px solid var(--border-color-galery);
+  border-right: 1px solid var(--border-color-galery);
 }
 .project-category {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--brand-color-grey);
-  margin: 0 24px 20px 24px;
+  padding: 0 24px 20px 24px;
+  border-left: 1px solid var(--border-color-galery);
+  border-right: 1px solid var(--border-color-galery);
 }
+
 /*footer styles*/
 footer {
   background-color: var(--brand-color-background-darc);
