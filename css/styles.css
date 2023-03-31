@@ -153,6 +153,9 @@ ul {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+.section.attitude {
+  padding-bottom: 0px;
+}
 .box-attitude {
   display: flex;
   flex-direction: row;
