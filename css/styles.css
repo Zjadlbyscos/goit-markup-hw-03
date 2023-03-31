@@ -192,10 +192,12 @@ ul {
   padding-top: 0;
 }
 .team {
+  background-color: var(--brand-color-background-team);
+}
+.section-team {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: var(--brand-color-background-team);
 }
 .gallery-our-team {
   display: flex;
