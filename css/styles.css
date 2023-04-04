@@ -44,7 +44,7 @@ header {
   justify-content: flex-start;
   gap: 46px;
   padding-left: 0;
-  margin-right: 371px;
+  padding-right: 371px;
 }
 
 .buttons {
